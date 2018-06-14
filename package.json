@@ -29,7 +29,7 @@
     "build:npm": "rm -rf dist && webpack --config ./webpack/webpack.config.npm.babel.js --progress",
     "build:quick": "rm -rf dist && webpack --config ./webpack/webpack.config.prod.babel.js --env=quick --progress",
     "stats": "webpack --config ./webpack/webpack.config.prod.babel.js --json > dist/stats.json",
-    "test": "babel-node ./node_modules/karma/bin/karma start karma.conf.js",
+    "test": "sh ./src/__tests__/run.sh",
     "flow": "flow check src/js",
     "eslint": "eslint src/js",
     "eslint-fix": "eslint --fix src/js",
